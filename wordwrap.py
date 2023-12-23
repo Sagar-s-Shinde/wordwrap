@@ -8,9 +8,10 @@ def word_wrap(para, width):
         raise TypeError("Only int is allowed")
 
     if width < 1:
-        raise TypeError("Width should be greater than 0")
+        raise ValueError("Width should be greater than 0")
 
     try:
+        return 0
 
     except (TypeError, ValueError) as e:
         print(f"Error: {e}")
